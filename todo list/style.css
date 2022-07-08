@@ -1,0 +1,106 @@
+html {
+    background: rgba(0, 0, 255, 0.199);  /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to left, #ffff1c, #00c3ff);  Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to top, #ffff1c, #00c3ff); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-repeat: no-repeat;
+    height: 100%;
+	background: url(./Image/list\ imAGE.jpg);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: none;
+}
+
+h1 {
+	background: #20beb0;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 10px 20px;
+	font-size: 24px;
+	font-weight: normal;
+	cursor: default;
+}
+
+input {
+	font-size: 18px;
+	background: #F7F7F7;
+	width: 100%;
+	padding: 13px 13px 13px 25px;
+	box-sizing: border-box;
+	color: #2980e9;
+	border: 3px solid #F7F7F7;
+}
+
+input:focus {
+	background: white;
+	border: 3px solid #FE4A49;
+	outline: none;
+}
+
+.entry {
+	background: white;
+	color: #666;
+	margin: 0;
+	padding: 0;
+	height: auto;
+	min-height: 40px;
+	box-sizing: border-box;
+	display: flex;
+	width: 100%;
+}
+
+.entry:nth-child(2n){
+	background: #F7F7F7;
+}
+
+.trash {
+	background: #FE4A49;
+	min-width: 0px;
+	color: white;
+	text-align: center;
+	width: 0px;
+	opacity: 0;
+}
+
+.fa-trash {
+	vertical-align: middle;
+}
+
+.entry:hover .trash {
+	min-width: 40px;
+	transition: 0.2s linear;
+	opacity: 1;
+}
+
+.text {
+	margin: auto 0;
+	padding: 5px 40px 5px 30px;
+	word-wrap: break-word;
+	cursor: default;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+.completed {
+	text-decoration: line-through;
+	color: gray;
+}
+
+.fa-plus-circle {
+	float: right;
+	font-weight: lighter;
+}
+
+.fa-plus-circle:hover {
+	font-weight: bold;
+}
+
+#container {
+	box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+	max-width: 360px;
+	width: 95%;
+	margin: 5% auto;
+	background: #F7F7F7;
+	
+}
